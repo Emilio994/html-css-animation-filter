@@ -157,14 +157,14 @@
   animation: move-top-left 3s linear infinite alternate;
 }
 @keyframes move-top-left {
-  0% {left: 10%;}
+  0%   {left: 10%;}
   100% {left: 50%;}
 }
 .ex-12-bottom-white {
   animation: move-bottom-right 3s linear infinite alternate;
 }
 @keyframes move-bottom-right {
-  0% {right: 20%;}
+  0%   {right: 20%;}
   100% {right: 60%;}
 }
 /* Eservizio 13 */
@@ -172,7 +172,21 @@
   animation: top-full-rotation 3s linear infinite normal;
 }
 @keyframes top-full-rotation {
-  0% {left: 10%; top: 10px;}
-  25% {left: 80%;}
-  100% {left: 80%;}
+  0%    {left: 10%;  top: -10px;}
+  20%   {left: 80%;  top: -10px;}
+  40%   {left: 80%;  top: 50px;}
+  60%   {left: -10%; top: 50px;}
+  80%   {left: -10%; top: -10px;}
+  100%  {left: 10%;  top: -10px;}
+}
+.ex-13-bottom-white {
+  animation: bottom-full-rotation 3s linear infinite normal;
+}
+@keyframes bottom-full-rotation {
+  0%    {right: 20%;  bottom: -10px;}
+  20%   {right: 80%;  bottom: -10px;}
+  40%   {right: 80%;  bottom: 50px;}
+  60%   {right: -10%; bottom: 50px;}
+  80%   {right: -10%; bottom: -10px;}
+  100%  {right: 10%;  bottom: -10px;}
 }
