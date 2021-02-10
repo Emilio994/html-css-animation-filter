@@ -75,8 +75,8 @@
 }
 
 /* Esercizio 7 */
-.ex-7-img{
-  animation: filters-one 1.5s linear -2s infinite alternate-reverse;
+.ex-7-img:hover{
+  animation: filters-one 1.5s linear  infinite alternate-reverse;
 }
 @keyframes filters-one {
   from {filter: blur(0px) invert(0);}
@@ -84,8 +84,8 @@
 }
 
 /* Esercizio 8 */
-.ex-8-img {
-  animation: filters-two 3s linear 0.5s infinite alternate;
+.ex-8-img:hover {
+  animation: filters-two 2s linear  infinite alternate;
 }
 @keyframes filters-two {
   from {filter: grayscale(0) opacity(1);border-radius: 0%;}
@@ -96,7 +96,9 @@
 .ex-9-img {
   margin: 50px 100px;
   width: 400px;
-  animation: filters-three 4s ease-in-out -2s infinite alternate;
+}
+.ex-9-img:hover {
+  animation: filters-three 4s ease-in-out infinite alternate;
 }
 @keyframes filters-three {
   0% {filter: hue-rotate(70deg) brightness(0.3);border-radius: 0%; width:400px}
@@ -106,7 +108,7 @@
 /* Esrcizio 10 */
 .ex-10-icon {
   font-size: 60px;
-  animation: rotation-full 3s linear infinite normal;
+  animation: rotation-full 3s linear -1s infinite normal;
 }
 @keyframes rotation-full {
   0% {transform: rotate(0deg);}
